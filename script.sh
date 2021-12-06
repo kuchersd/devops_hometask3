@@ -6,4 +6,4 @@ find / -type d -perm -1000 -exec ls -ld {} \;
 ln -s /etc/hostname /tmp
 adduser testuser
 mkhomedir_helper testuser
-touch testuser_data
+touch /home/testuser_data && sudo chown testuser:testuser /home/testuser_data
